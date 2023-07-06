@@ -95,7 +95,7 @@ extension MastodonMetaContent {
             return node
         }
 
-        static func parse(element: XMLElement, parentText: Substring, parentLevel: Int) -> [Node] {
+        static func parse(element: Fuzi.XMLElement, parentText: Substring, parentLevel: Int) -> [Node] {
             let parent = element
             let scanner = Scanner(string: String(parentText))
             scanner.charactersToBeSkipped = .none
